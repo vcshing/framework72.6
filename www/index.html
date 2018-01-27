@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
@@ -8,61 +9,64 @@
   <meta name="theme-color" content="#2196f3">
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
   <title>Framework7</title>
-  <link rel="stylesheet" href="../dist/css/framework7.min.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="lib/framework7/css/app.css">
+
+  <link rel="stylesheet" href="css/csshake.min.css">
   <link rel="apple-touch-icon" href="img/f7-icon-square.png">
   <link rel="icon" href="img/f7-icon.png">
-</head>
+  <link rel="stylesheet" href="commonjs/library/editor/trumbowyg.css">
+    <link rel="stylesheet" href="commonjs/library/editor/trumbowyg.colors.min.css">
+  <link rel="stylesheet" href="commonjs/library/chartistjs/chartistjs.css">
+  <link rel="stylesheet" href="css/styles.css">
+<style>
+input, textarea {
+      -webkit-user-select: auto !important;
+      -khtml-user-select: auto !important;
+      -moz-user-select: auto !important;
+      -ms-user-select: auto !important;
+      -o-user-select: auto !important;
+      user-select: auto !important;
+}
+</style>
 <body>
+
   <div id="app">
     <div class="statusbar"></div>
     <div class="panel panel-left panel-cover">
       <div class="page">
         <div class="page-content">
-          <div class="block-title">Left Panel</div>
-          <div class="block">
-            <p>This is a left side panel. You can close it by clicking outsite or on this link: <a href="#" class="panel-close">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="panel-open">Right Panel</a></p>
-          </div>
-          <div class="block-title">Main View Navigation</div>
+          <!--  <div class="block-title">Left Panel</div>
+          <div class="block">  </div>
+          <div class="block-title">Main View Navigation</div>-->
           <div class="list links-list">
             <ul>
               <li>
-                <a href="/accordion/" class="panel-close">Accordion</a>
+                <a href="/home" class="panel-close">主頁</a>
               </li>
               <li>
-                <a href="/action-sheet/" class="panel-close">Action Sheet</a>
+                <a href="/user-submit-exam/" class="panel-close">提交心理測驗題目</a>
               </li>
               <li>
-                <a href="/badge/" class="panel-close">Badge</a>
+                <a href="/user-selfsubmit-list/" class="panel-close"  >我的心理測驗題目</a>
               </li>
               <li>
-                <a href="/buttons/" class="panel-close">Buttons</a>
+                <a href="/disclaimer/" class="panel-close"  >聲明</a>
               </li>
               <li>
-                <a href="/cards/" class="panel-close">Cards</a>
+                <a href="#" class="panel-close otherApp">其他應用</a>
               </li>
               <li>
-                <a href="/checkbox/" class="panel-close">Checkbox</a>
+                <a href="#" class="panel-close shareApp">分享應用</a>
               </li>
-              <li>
-                <a href="/chips/" class="panel-close">Chips/Tags</a>
-              </li>
-              <li>
-                <a href="/contacts-list/" class="panel-close">Contacts List</a>
-              </li>
-              <li>
-                <a href="/data-table/" class="panel-close">Data Table</a>
-              </li>
+
             </ul>
           </div>
-          <div class="block">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.</p>
-            <p>Duis ut mauris sollicitudin, venenatis nisi sed, luctus ligula. Phasellus blandit nisl ut lorem semper pharetra. Nullam tortor nibh, suscipit in consequat vel, feugiat sed quam. Nam risus libero, auctor vel tristique ac, malesuada ut ante. Sed molestie, est in eleifend sagittis, leo tortor ullamcorper erat, at vulputate eros sapien nec libero. Mauris dapibus laoreet nibh quis bibendum. Fusce dolor sem, suscipit in iaculis id, pharetra at urna. Pellentesque tempor congue massa quis faucibus. Vestibulum nunc eros, convallis blandit dui sit amet, gravida adipiscing libero.</p>
-          </div>
+          <!--  <div class="block">  </div>-->
         </div>
       </div>
     </div>
-    <div class="panel panel-right panel-reveal">
+    <!--  <div class="panel panel-right panel-reveal">
       <div class="view view-init view-right" name="right" data-url="/">
         <div class="page">
           <div class="navbar">
@@ -84,7 +88,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="view view-main view-init ios-edges" data-url="/">
       <div class="page">
         <div class="navbar">
@@ -95,17 +99,17 @@
                 <i class="icon material-icons md-only">menu</i>
               </a>
             </div>
-            <div class="title sliding">Framework7</div>
-            <div class="right">
+            <div class="title sliding">心理測驗</div>
+        <!--    <div class="right">
               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
                 <i class="icon f7-icons ios-only">search_strong</i>
                 <i class="icon material-icons md-only">search</i>
               </a>
-            </div>
+            </div>-->
             <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
               <div class="searchbar-inner">
                 <div class="searchbar-input-wrap">
-                  <input type="search" placeholder="Search components"/>
+                  <input type="search" placeholder="Search components" />
                   <i class="searchbar-icon"></i>
                   <span class="input-clear-button"></span>
                 </div>
@@ -114,479 +118,112 @@
             </form>
           </div>
         </div>
-        <div class="page-content">
-          <div class="list searchbar-hide-on-search">
-            <ul>
-              <li>
-                <a class="item-content item-link" href="/about/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">About Framework7</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="block-title searchbar-found">Components</div>
-          <div class="list components-list searchbar-found">
-            <ul>
-              <li>
-                <a class="item-content item-link" href="/accordion/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Accordion</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/action-sheet/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Action Sheet</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/autocomplete/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Autocomplete</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/badge/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Badge</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/buttons/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Buttons</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/calendar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Calendar / Date Picker</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/cards/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Cards</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/checkbox/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Checkbox</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/chips/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Chips / Tags</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/contacts-list/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Contacts List</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/content-block/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Content Block</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/data-table/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Data Table</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/dialog/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Dialog</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/fab/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">FAB</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/fab-morph/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">FAB Morph</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/form-storage/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Form Storage</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/icons/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Icons</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/infinite-scroll/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Infinite Scroll</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/inputs/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Inputs</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/grid/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Grid / Layout Grid</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/lazy-load/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Lazy Load</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/list/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">List View</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/login-screen/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Login Screen</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/messages/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Messages</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/navbar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Navbar</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/notifications/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Notifications</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/panel/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Panel / Side Panels</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/picker/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Picker</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/photo-browser/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Photo Browser</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/popup/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Popup</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/popover/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Popover</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/preloader/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Preloader</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/progressbar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Progress Bar</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/pull-to-refresh/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Pull To Refresh</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/radio/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Radio</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/range/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Range Slider</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/searchbar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Searchbar</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/searchbar-expandable/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Searchbar Expandable</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/sheet-modal/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Sheet Modal</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/smart-select/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Smart Select</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/sortable/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Sortable List</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/statusbar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Statusbar</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/subnavbar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Subnavbar</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/swipeout/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Swipeout (Swipe To Delete)</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/swiper/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Swiper Slider</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/tabs/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Tabs</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/timeline/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Timeline</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/toast/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Toast</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/toggle/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Toggle</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/toolbar-tabbar/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Toolbar & Tabbar</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/virtual-list/">
-                  <div class="item-media"><i class="icon icon-f7"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">Virtual List</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="item-content item-link" href="/vi/">
-                  <div class="item-media"><i class="icon icon-vi"></i></div>
-                  <div class="item-inner">
-                    <div class="item-title">vi - Mobile Video SSP</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <div class="page-content infinite-scroll-content  ptr-content">
+          <div class="ptr-preloader">
+            <div class="preloader"></div>
+            <div class="ptr-arrow"></div>
           </div>
           <div class="list simple-list searchbar-not-found">
             <ul>
               <li>Nothing found</li>
             </ul>
           </div>
-          <div class="block-title searchbar-hide-on-search">Themes</div>
-          <div class="list links-list searchbar-hide-on-search">
+          <div class="list indexTypeList">
             <ul>
               <li>
-                <a href="./index.html?theme=ios" class="external">iOS Theme</a>
+                <a class="item-link smart-select smart-select-init picker-type" data-open-in="popover">
+                  <div>
+                    <select name="type" multiple class="type">
+                      <option value="">ALL<option>
+                    </select>
+                </div>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">種類</div>
+                    </div>
+                  </div>
+                </a>
               </li>
-              <li>
-                <a href="./index.html?theme=md" class="external">Material (MD) Theme</a>
-              </li>
-              <li>
-                <a href="/color-themes/">Color Themes</a>
-              </li>
+
             </ul>
           </div>
-          <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
-          <div class="list links-list searchbar-hide-on-search">
+          <div class="list sortable ">
             <ul>
-              <li>
-                <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&end=30#top">Template7 Page</a>
-              </li>
-              <li>
-                <a href="/page-loader-component/vladimir/123/about-me/1/?start=0&end=30#top">Component Page</a>
-              </li>
-              <li>
-                <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-              </li>
+            <div class="topicList">
+            </div>
             </ul>
+                <div class="preloader infinite-scroll-preloader "></div>
           </div>
-        </div>
+
+          <!-- <iframe src="http://www.webtech.tw/info.php?tid=%E7%94%A8_CSS_z-index_%E8%A8%AD%E8%A8%88%E5%A4%9A%E5%BC%B5%E5%9C%96%E7%89%87%E9%87%8D%E7%96%8A%E7%9A%84%E6%95%88%E6%9E%9C"></iframe>
+      -->  </div>
       </div>
     </div>
   </div>
-  <script src="../dist/js/framework7.min.js"></script>
-  <script src="js/routes.js"></script>
-  <script src="js/app.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="commonjs/library/jquery.js"></script>
+  <script type="text/javascript" src="commonjs/library/googlechartjs/Chart.js"></script>
+    <script type="text/javascript" src="commonjs/library/chartistjs/chartistjs.js"></script>
+<script type="text/javascript" src="commonjs/library/d3pie/d3.min.js"></script>
+    <script type="text/javascript" src="commonjs/library/d3pie/chart.js"></script>
+  <script type="text/javascript" src="commonjs/library/editor/trumbowyg.js"></script>
+  <script type="text/javascript" src="commonjs/library/editor/trumbowyg.allowtagsfrompaste.js"></script>
+  <script type="text/javascript" src="commonjs/library/editor/trumbowyg.colors.min.js"></script>
+
+
+  <!--  <script type="text/javascript" src="commonjs/library/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/moment.js"></script>-->
+  <script type="text/javascript" src="commonjs/library/local_storage_manager.js"></script>
+  <script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
+  <script type="text/javascript" src="commonjs/global/langArr.js"></script>
+  <script type="text/javascript" src="commonjs/routes/routes.js"></script>
+
+  <script type="text/javascript" src="commonjs/global/projectCommonFunction.js"></script>
+  <script type="text/javascript" src="commonjs/global/projectCommonBindEvent.js"></script>
+  <script type="text/javascript" src="commonjs/routes/app.js"></script>
+
+  <script type="text/javascript" src="page/index/init.js"></script>
+  <script type="text/javascript" src="page/index/function.js"></script>
+  <script type="text/javascript" src="page/index/bindEvent.js"></script>
+  <script type="text/javascript" src="page/index/xhr.js"></script>
+
+  <script type="text/javascript" src="page/user-submit-exam/js/init.js"></script>
+  <script type="text/javascript" src="page/user-submit-exam/js/function.js"></script>
+  <script type="text/javascript" src="page/user-submit-exam/js/bindEvent.js"></script>
+  <script type="text/javascript" src="page/user-submit-exam/js/xhr.js"></script>
+
+  <script type="text/javascript" src="page/question/js/init.js"></script>
+  <script type="text/javascript" src="page/question/js/function.js"></script>
+  <script type="text/javascript" src="page/question/js/bindEvent.js"></script>
+  <script type="text/javascript" src="page/question/js/xhr.js"></script>
+
+  <script type="text/javascript" src="page/comments/js/init.js"></script>
+  <script type="text/javascript" src="page/comments/js/function.js"></script>
+  <script type="text/javascript" src="page/comments/js/bindEvent.js"></script>
+  <script type="text/javascript" src="page/comments/js/xhr.js"></script>
+
+  <script type="text/javascript" src="page/statistics/js/init.js"></script>
+  <script type="text/javascript" src="page/statistics/js/function.js"></script>
+  <script type="text/javascript" src="page/statistics/js/bindEvent.js"></script>
+  <script type="text/javascript" src="page/statistics/js/xhr.js"></script>
+
+  <script type="text/javascript" src="page/user-selfsubmit-list/js/init.js"></script>
+  <script type="text/javascript" src="page/user-selfsubmit-list/js/function.js"></script>
+  <script type="text/javascript" src="page/user-selfsubmit-list/js/bindEvent.js"></script>
+  <script type="text/javascript" src="page/user-selfsubmit-list/js/xhr.js"></script>
+
+  <script type="text/javascript" src="page/user-submit-edit/js/init.js"></script>
+  <script type="text/javascript" src="page/user-submit-edit/js/function.js"></script>
+  <script type="text/javascript" src="page/user-submit-edit/js/bindEvent.js"></script>
+  <script type="text/javascript" src="page/user-submit-edit/js/xhr.js"></script>
+
+
+</head>
+  <script>
+  $(function(){
+    init()
+  })
+  </script>
 </body>
+
 </html>
